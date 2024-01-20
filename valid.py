@@ -104,8 +104,7 @@ def DOB_input():
         if valid != True:
             for code in list(set(codes)):
                 print(error_codes[code] + '-_-')
-    print('The provided date is valid.')
-
+    return date
 def validate_email(email):
     # Declares starting variables
     valid = True
@@ -152,7 +151,7 @@ def email_input():
         if valid == False:
             for code in codes:
                 print(error_codes[code] + ' -_-')
-    return(valid)
+    return(email)
 
 # print(DOB_input())
 # print(email_input())
