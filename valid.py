@@ -88,12 +88,12 @@ def DOB_input():
     # Defines the error codes
     valid = False
     error_codes = {
-        1 : 'No input entered!',
-        2 : 'Date wrong length!',
-        3 : 'Date wrong format!',
-        4 : 'Day out of range!',
-        5 : 'Month out of range!',
-        6 : 'Year out of range!',
+        1 : 'No input entered',
+        2 : 'Date wrong length',
+        3 : 'Date wrong format',
+        4 : 'Day out of range',
+        5 : 'Month out of range',
+        6 : 'Year out of range',
     }
 
     while valid == False:
@@ -103,7 +103,7 @@ def DOB_input():
         valid, codes = DOB_validate(date)
         if valid != True:
             for code in list(set(codes)):
-                print(error_codes[code])
+                print(error_codes[code] + '-_-')
     print('The provided date is valid.')
 
 def validate_email(email):
