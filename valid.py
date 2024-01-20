@@ -152,8 +152,7 @@ def email_input():
         if valid == False:
             for code in codes:
                 print(error_codes[code] + ' -_-')
-        else:
-            print('Your email is: ' + email)
+    return(valid)
 
-# DOB_input()
-# email_input()
+# print(DOB_input())
+# print(email_input())
